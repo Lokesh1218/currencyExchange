@@ -1,0 +1,12 @@
+.amount-input  {
+  width: 50%;
+}
+.amount-input input {
+  background: transparent !important;
+  border: 0 !important;
+  font-size: 24px;
+  font-weight: 500;
+  width: 14rem;
+  outline: none;
+}
+
