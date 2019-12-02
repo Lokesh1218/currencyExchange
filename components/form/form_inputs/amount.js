@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import styles from './amount.css';
 
-
 class Amount extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +14,7 @@ class Amount extends Component {
   }
   render() {
     return (
-      <Fragment>
+      <div>
         <style jsx global>{ styles } </style>
         <div className="auxiliary-input-wrap amount-input">
           <input type="number" 
@@ -29,7 +28,7 @@ class Amount extends Component {
             ref={input => input && (this.props.focusElement === this.props.targetElement) && input.focus()}
             defaultValue={this.props.value && parseFloat(this.props.value.toFixed(2))} />
         </div>
-      </Fragment>
+      </div>
     );
   }
 }
